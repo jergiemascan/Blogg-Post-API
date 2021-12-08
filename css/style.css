@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /*1rem=10px*/
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #42484d;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.4rem;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+}
