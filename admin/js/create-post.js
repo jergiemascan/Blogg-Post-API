@@ -1,40 +1,45 @@
-"use strict";
+'use strict';
 
 window.onload = function () {
   createNewPost();
 };
 
 function createNewPost() {
-  const createForm = document.getElementById("create-post");
+  const createPostForm = document.getElementById('create-post');
 
-  createForm.addEventListener("submit", async function (e) {
+  createPostForm.addEventListener('submit', async function (e) {
     e.preventDefault();
 
     let date = new Date();
-    let fullDate = `${date.getFullYear()}-${
-      date.getMonth() + 1
-    }${date.getDate()} ${date.getHours}`;
+    date = `${date.getFullYear()}-${date.getMonth() + 1}${date.getDate()} ${
+      date.getHours
+    }`;
 
-    let formData = new FormData(createForm);
+    let values = Array.prototype.slice
+      .call(document.querySelectorAll('#tags option:checked'), 0)
+      .map(function (choosen) {
+        return choosen.value;
+      });
+    console.log(values);
+
+    let formData = new FormData(createPostForm);
     formData = {
-      title: formData.get("title"),
-      author: formData.get("author"),
-      date: formData.get(fullDate),
-      content: formData.get("content"),
+      title: document.getElementById('title').value,
+      author: document.getElementById('author').value,
+      date: formData.get(date),
+      tags: values,
+      content: document.getElementById('content').value,
     };
     try {
       const response = await fetch(`http://localhost:5000/posts`, {
-        method: "POST",
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify(),
+        body: JSON.stringify(formData),
       });
+      location.replace('index.html');
       console.log(response);
-      location.replace("index.html");
-      const table = document.getElementById("post-table");
-
-      console.log(table);
     } catch (error) {
       console.log(error);
     }
