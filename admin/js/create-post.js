@@ -15,19 +15,19 @@ function createNewPost() {
       date.getHours
     }`;
 
-    let values = Array.prototype.slice
+    let tags = Array.prototype.slice
       .call(document.querySelectorAll('#tags option:checked'), 0)
       .map(function (choosen) {
         return choosen.value;
       });
-    console.log(values);
+    console.log(tags);
 
     let formData = new FormData(createPostForm);
     formData = {
       title: document.getElementById('title').value,
       author: document.getElementById('author').value,
       date: formData.get(date),
-      tags: values,
+      tags: tags,
       content: document.getElementById('content').value,
     };
     try {
