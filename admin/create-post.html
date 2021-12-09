@@ -18,14 +18,35 @@
       <h1>New Post</h1>
 
       <form id="create-post">
-        <label for="">Title</label><br />
-        <input type="text" name="" id="" /><br />
+        <div>
+          <label for="">Title</label><br />
+          <input type="text" name="title" id="title" />
+        </div>
 
-        <label for="">Author</label><br />
-        <input type="text" /><br />
-        <label for="">Content</label><br />
-        <textarea name="content" id="content" cols="30" rows="10"></textarea
-        ><br />
+        <div>
+          <label for="">Author</label><br />
+          <input type="text" id="author" />
+        </div>
+
+        <div>
+          <label for="">Content</label><br />
+          <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        </div>
+
+        <label for="">Tags</label><br />
+        <select name="tags" id="tags" size="11" multiple>
+          <option value="Economics">Economics</option>
+          <option value="Sports">Sports</option>
+          <option value="Education">Education</option>
+          <option value="News" selected>News</option>
+          <option value="Politics" selected>Politics</option>
+          <option value="Food">Food</option>
+          <option value="Travel">Travel</option>
+          <option value="Art">Art</option>
+          <option value="Weather">Weather</option>
+          <option value="Fashion">Fashion</option>
+          <option value="Showbiz" selected>Showbiz</option>
+        </select>
         <input id="create" type="submit" value="Create" />
       </form>
       <a href="index.html">&#x2190;back</a>
