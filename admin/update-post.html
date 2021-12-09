@@ -7,7 +7,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>Update Post Page</title>
   </head>
   <body>
     <div class="container">
@@ -16,14 +16,20 @@
       </nav>
       <h1>Update post</h1>
       <form id="update-form">
-        <label for="">Title</label><br />
-        <input type="text" name="" id="" /><br />
+        <div>
+          <label for="">Title</label><br />
+          <input type="text" id="tags" />
+        </div>
 
-        <label for="">Author</label><br />
-        <input type="text" /><br />
-        <label for="">Content</label><br />
-        <textarea name="content" id="content" cols="30" rows="10"></textarea
-        ><br />
+        <div>
+          <label for="">Author</label><br />
+          <input type="text" id="author" />
+        </div>
+
+        <div>
+          <label for="">Content</label><br />
+          <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        </div>
         <input id="update" type="submit" value="Update" />
       </form>
       <a href="index.html">&#x2190;back</a>
