@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #42484d;
   font-weight: 400;
   line-height: 1.6;
@@ -25,4 +25,20 @@ nav {
 .container {
   max-width: 114rem;
   margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*//////////////////////////POST JS STYLE////////////////////////////*/
+
+#bold {
+  font-weight: 700;
 }
