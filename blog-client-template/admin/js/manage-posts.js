@@ -7,7 +7,7 @@ window.onload = function () {
 async function getAllBlogPost() {
   try {
     let response = await fetch('http://localhost:5000/posts', {
-      method: 'GET', // GET, POST, PATCH, DELETE.
+      method: 'GET',
       headers: {
         'Content-Type': 'application/json',
       },
