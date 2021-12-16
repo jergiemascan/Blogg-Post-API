@@ -5,3 +5,11 @@ body {
     rgb(255, 215, 84)
   );
 }
+
+#update-form {
+  margin-bottom: 2rem;
+}
+#update {
+  padding: 1rem 0;
+  transition: 0.2s;
+}

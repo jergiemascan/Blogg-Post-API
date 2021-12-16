@@ -1,7 +1,7 @@
 async function OurBlogContent() {
   try {
     let response = await fetch('http://localhost:5000/posts');
-    const Contents= await response.json();
+    const Contents = await response.json();
     console.log(Contents);
 
     let contentHTML = '';
@@ -9,11 +9,11 @@ async function OurBlogContent() {
       contentHTML += `
         <li>
           <h2>${Content.title}</h2>
-          <p>Author:${Content.author}</p>
-          <span>Date:${Content.date
+          <p><span id="bold">Author:</span>${Content.author}</p>
+          <span><span id="bold">Date:</span>${Content.date
             .slice(0, -8)
             .replace('T', ' ')}</span><br>
-          <tags>Tags:${Content.tags}</tags>
+          <tags><span id="bold">Tags:</span>${Content.tags}</tags>
           <article class="article" >
            ${Content.content}
           </article>
@@ -36,11 +36,9 @@ async function OurBlogContent() {
         article.innerHTML = display100Char;
       }
     });
-    } catch (error) {
+  } catch (error) {
     console.log(error);
   }
 }
 
 OurBlogContent();
-
-

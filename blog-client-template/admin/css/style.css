@@ -14,26 +14,36 @@ body {
   color: #42484d;
   font-weight: 400;
   line-height: 1.6;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .container {
-  max-width: 120rem;
-  margin: 0 auto;
+  max-width: 125rem;
+  margin: 5rem auto 0 auto;
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
 }
-#create-link {
-  display: flex;
-  justify-content: flex-end;
-  padding-bottom: 1rem;
+.btn-blogpage {
+  text-transform: uppercase;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border: 1px solid #ff5252;
+  color: #e77f67;
+  margin-bottom: 15rem;
+  transition: 0.3s;
 }
-#post-table {
-  width: 100%;
+.btn-blogpage:hover {
+  background-color: #e67e22;
+  color: #fff;
+  transform: translateY(-0.5rem);
 }
+.arrow-admin {
+  margin-left: 0.5rem;
+}
+
 tr,
 th,
 td {
@@ -47,22 +57,19 @@ td {
 }
 a {
   text-decoration: none;
+  color: inherit;
+}
+.btn-back {
+  color: #fff;
+  background-color: #2f81edd0;
+  letter-spacing: 1px;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  margin-left: 0.5rem;
 }
 
-/*############################CREATE POST CSS STYLE#########################*/
-#create-post {
-  width: 80%;
-  padding: 1rem;
-}
-#create {
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem 0;
-  margin-top: 1rem;
-  cursor: pointer;
-}
 input,
 textarea {
   width: 70%;
@@ -72,7 +79,6 @@ textarea {
 #tags {
   width: 70%;
   padding: 1rem 0;
-  /* text-align: center; */
 }
 
 /* FOOTER STYLE */
