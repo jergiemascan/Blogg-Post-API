@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /*1rem=10px*/
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #42484d;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+.container {
+  max-width: 125rem;
+  margin: 5rem auto 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-blogpage {
+  text-transform: uppercase;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border: 1px solid #ff5252;
+  color: #e77f67;
+  margin-bottom: 15rem;
+  transition: 0.3s;
+}
+.btn-blogpage:hover {
+  background-color: #e67e22;
+  color: #fff;
+  transform: translateY(-0.5rem);
+}
+.arrow-admin {
+  margin-left: 0.5rem;
+}
+
+tr,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 1rem;
+}
+#post-table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.btn-back {
+  color: #fff;
+  background-color: #2f81edd0;
+  letter-spacing: 1px;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  margin-left: 0.5rem;
+}
+
+input,
+textarea {
+  width: 70%;
+  margin-top: 10px;
+}
+
+#tags {
+  width: 70%;
+  padding: 1rem 0;
+}
+
+/* FOOTER STYLE */
+
+#footer {
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 83rem 0 0 0;
+  background-color: #333;
+}
+
+#footer-list {
+  display: flex;
+}
+#footer-list li {
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid grey;
+}
+
+#rights {
+  padding-top: 1rem;
+}
+#made-by {
+  padding-top: 1rem;
+  text-align: center;
+  border-top: 1px solid grey;
+}
+
+li {
+  list-style: none;
+}

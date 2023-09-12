@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/update-post.css" />
+    <title>Update Post Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="blogg-front-index">
+        <a class="btn-blogpage" href="../index.html"
+          >To Homepage<span class="arrow-admin">&rarr;</span></a
+        >
+      </nav>
+      <h1>Update post</h1>
+      <form id="update-form">
+        <div>
+          <label for="">Title</label><br />
+          <input type="text" id="title" />
+        </div>
+
+        <div>
+          <label for="">Author</label><br />
+          <input type="text" id="author" />
+        </div>
+
+        <div>
+          <label for="">Content</label><br />
+          <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        </div>
+
+        <label for="">Tags</label><br />
+        <select name="tags" id="tags" size="11" multiple>
+          <option value="Economics">Economics</option>
+          <option value="Sports">Sports</option>
+          <option value="Education">Education</option>
+          <option value="News" selected>News</option>
+          <option value="Politics" selected>Politics</option>
+          <option value="Food">Food</option>
+          <option value="Travel">Travel</option>
+          <option value="Art">Art</option>
+          <option value="Weather">Weather</option>
+          <option value="Fashion">Fashion</option>
+          <option value="Showbiz" selected>Showbiz</option>
+          <option value="Technology">Technology</option>
+        </select>
+
+        <input id="update" type="submit" value="Update" />
+      </form>
+      <a class="btn-back" href="index.html">&#x2190;back</a>
+    </div>
+
+    <footer id="footer">
+      <div>
+        <ul id="footer-list">
+          <li>CONTACT US</li>
+          <li>COMPANY</li>
+          <li>CAREERS</li>
+          <li>PRIVACY</li>
+          <li>TERMS</li>
+        </ul>
+      </div>
+      <div id="rights">
+        <p id="made-by">
+          This page is made by David, Sammy, Jergie and Eden. Just for learning
+          purposes only.<br />
+          All rights reserved &copy;2021.
+        </p>
+      </div>
+    </footer>
+    <script src="js/update-post.js"></script>
+  </body>
+</html>
